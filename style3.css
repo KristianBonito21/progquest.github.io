@@ -1,0 +1,36 @@
+@font-face {
+    font-family: GrapeSoda;
+    src: url(GrapeSoda.ttf);
+}
+
+body {
+    font-family: 'GrapeSoda', sans-serif;
+    background: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(forest.png);
+    color: white;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+}

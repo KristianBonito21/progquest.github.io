@@ -1,0 +1,68 @@
+@font-face {
+    font-family: GrapeSoda;
+    src: url(GrapeSoda.ttf);
+}
+
+body {
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(forest.png);
+    margin: 0;
+    padding: 0;
+    font-family: 'GrapeSoda', Arial, sans-serif;
+}
+
+.text-box h1 {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 28px;
+    color: white;
+}
+
+.icon-text img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+}
+
+.icon-text span {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.icon-text span:hover {
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .text-box h1 {
+        font-size: 40px;
+        margin: 20px 0;
+    }
+
+    .icon-text {
+        flex-direction: column;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .icon-text img {
+        width: 60px;
+        height: 60px;
+    }
+}
